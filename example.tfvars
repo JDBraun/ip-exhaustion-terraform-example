@@ -3,7 +3,7 @@ databricks_account_username = ""
 databricks_account_password = ""
 databricks_account_id = ""
 resource_owner = ""
-resource_prefix = "standard-terraform-example"
+resource_prefix = "ip-exhaustion-terraform-example"
 
 // AWS Variables
 aws_access_key = ""

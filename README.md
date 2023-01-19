@@ -47,4 +47,4 @@
 
 # Network Diagram
 
-![Architecture Diagram](https://github.com/JDBraun/standard-terraform-example/blob/master/img/Standard%20-%20Network%20Topology.png)
+![Architecture Diagram](https://github.com/JDBraun/ip-exhaustion-terraform-example/blob/master/img/IP%20Exhaustion%20-%20Network%20Topology.png)
