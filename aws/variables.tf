@@ -44,15 +44,23 @@ variable "region" {
   type = string
 }
 
-variable "vpc_cidr_range" {
+variable "routable_vpc_cidr_range" {
   type = string
 }
 
-variable "private_subnets_cidr" {
+variable "non_routable_vpc_cidr_range" {
   type = string
 }
 
-variable "public_subnets_cidr" {
+variable "routable_public_subnets_cidr" {
+  type = string
+}
+
+variable "routable_private_subnets_cidr" {
+  type = string
+}
+
+variable "non_routable_private_subnets_cidr" {
   type = string
 }
 

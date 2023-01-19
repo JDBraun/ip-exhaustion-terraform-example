@@ -8,11 +8,11 @@ module "vpc_endpoints" {
 
   endpoints = {
     s3 = {
-      count = length(local.private_subnets_cidr)
+      count = length(local.non_routable_private_subnets_cidr)
       service      = "s3"
       service_type = "Gateway"
       route_table_ids = flatten([
-        aws_route_table.private_rt[*].id
+        aws_route_table.non_routable_rt[*].id
       ])
       tags = {
         Name = "${local.prefix}-s3-vpc-endpoint"
@@ -21,7 +21,7 @@ module "vpc_endpoints" {
     sts = {
       service             = "sts"
       private_dns_enabled = true
-      subnet_ids          = aws_subnet.private[*].id
+      subnet_ids          = aws_subnet.privatelink[*].id
       tags = {
         Name = "${local.prefix}-sts-vpc-endpoint"
       }
@@ -29,7 +29,7 @@ module "vpc_endpoints" {
     kinesis-streams = {
       service             = "kinesis-streams"
       private_dns_enabled = true
-      subnet_ids          = aws_subnet.private[*].id
+      subnet_ids          = aws_subnet.privatelink[*].id
       tags = {
         Name = "${local.prefix}-kinesis-vpc-endpoint"
       }

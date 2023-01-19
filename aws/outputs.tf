@@ -1,3 +1,3 @@
-output "databricks_host" {
-  value = module.databricks_mws_workspace.workspace_url
-}
+# output "databricks_host" {
+#   value = module.databricks_mws_workspace.workspace_url
+# }

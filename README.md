@@ -1,5 +1,4 @@
-# Standard Workspace + Unity Catalog Deployment Example
-
+# Workspace Deployment into Non-Routable Subnet Space
 
 - This example is meant to be an example to assist with trials, proof of concepts, and a foundation for production deployments. 
 - There are no guarantees or warranties associated with this example.
@@ -11,11 +10,12 @@
     - Security Groups
     - NACLs
     - Route Tables
+    - Internet Gateway
+    - Private & Public NAT Gateway
     - AWS VPC Endpoints (S3, Kinesis, STS, Databricks Endpoints)
     - S3 Root Bucket
     - Cross Account - IAM Role
     - S3 Instance Profile - IAM Role
-    - External Location - IAM Role
 
 - **Workspace Deployment:**
     - Credential Configuration
@@ -25,10 +25,6 @@
 - **Post Workspace Deployment:**
     - Data Engineering Cluster 
     - Instance Profile Registration
-
-- **Post Workspace Deployment:**
-    - Unity Catalog - Metastore
-    - External Location 
 
 # Getting Started
 
