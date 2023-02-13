@@ -2,6 +2,7 @@
 
 - This example is meant to be an example to assist with trials, proof of concepts, and a foundation for production deployments. 
 - There are no guarantees or warranties associated with this example.
+- Please use proper password security and management. For more information see [here](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/variables/managing-variables).
 
 # Terraform Script
 
